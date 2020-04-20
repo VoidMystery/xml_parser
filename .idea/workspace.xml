@@ -20,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/servlet-and-xml-parsers" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,6 +30,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1alBlCgycvmMkIf9YLp7ez0nHJq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -78,7 +79,7 @@
       <updated>1587300448542</updated>
       <workItem from="1587300451310" duration="28440000" />
       <workItem from="1587335292557" duration="3225000" />
-      <workItem from="1587382925023" duration="35337000" />
+      <workItem from="1587382925023" duration="35740000" />
     </task>
     <servers />
   </component>
