@@ -1,0 +1,40 @@
+body{
+    min-height: 100vh;
+    min-width: 1200px;
+    background-color: rgb(232,230,230);
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+.main{
+    width: 1200px;
+    background-color: white;
+}
+
+#cover {
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+.login-form{
+    background-color: rgb(37, 116, 150);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+input:valid {
+    box-shadow: 0 0 5px 1px green;
+}
