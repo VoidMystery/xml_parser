@@ -8,7 +8,6 @@ import by.jwd.lemesheuski.xml_parser.service.ServiceException;
 import by.jwd.lemesheuski.xml_parser.dao.DAOProvider;
 
 import javax.servlet.http.Part;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FileServiceImpl implements FileService {
@@ -16,8 +15,9 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public List<Apartment> read(String uploadPath, String parserType, Part file) throws ServiceException {
-        List<Apartment> apartments = new ArrayList<>();
-        if (parserType != null && !parserType.isEmpty() && file != null) {
+        List<Apartment> apartments = null;
+        if (parserType != null && !parserType.isEmpty() && file != null && file.getSize()!=0) {
+            System.out.println(file.getSize());
             try {
                 xml_dao.save(uploadPath, file);
                 if (!xml_dao.validate(uploadPath, parserType, file)) {

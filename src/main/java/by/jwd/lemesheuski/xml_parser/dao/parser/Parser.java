@@ -15,6 +15,7 @@ import java.util.List;
 public interface Parser {
     List<Apartment> parse(String path, String filename) throws ParserException;
     boolean validate(String path, String filename) throws ParserException;
+    
     default void validateCommon(String path, Source source)throws IOException, SAXException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         File schemaLocation = new File(path + File.separator + "apartment.xsd");

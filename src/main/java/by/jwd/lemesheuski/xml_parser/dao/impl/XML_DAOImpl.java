@@ -10,13 +10,12 @@ import by.jwd.lemesheuski.xml_parser.dao.parser.ParserProvider;
 import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class XML_DAOImpl implements XML_DAO {
     @Override
     public List<Apartment> read(String uploadPath, String type, Part file) throws DAOException {
-        List<Apartment> apartments = new ArrayList<>();
+        List<Apartment> apartments;
         String fileName = file.getSubmittedFileName();
         try {
             Parser parser = ParserProvider.getInstance().getParser(type);

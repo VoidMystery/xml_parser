@@ -31,7 +31,6 @@ public class ApartmentHandler extends DefaultHandler {
     }
 
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        System.out.println(localName);
         ApartmentTagName tagName = ApartmentTagName.valueOf(localName.toUpperCase().replace("-", "_"));
         switch (tagName) {
             case FLOOR:

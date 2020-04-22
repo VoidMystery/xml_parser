@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ap:apartments
-        xmlns:ap="http://www.task.org/apartment"
+<apartments
+        xmlns="http://www.task.org/apartment"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.task.org/apartment apartment.xsd" >
-    <ap:apartment id="1">
-        <ap:floor>1</ap:floor>
-        <ap:room>101</ap:room>
-        <ap:balcony>true</ap:balcony>
-    </ap:apartment>
-    <ap:apartment id="2">
-        <ap:floor>1</ap:floor>
-        <ap:room>102</ap:room>
-        <ap:balcony>false</ap:balcony>
-    </ap:apartment>
-</ap:apartments>
+    <apartment id="1">
+        <floor>1</floor>
+        <room>101</room>
+        <balcony>true</balcony>
+    </apartment>
+    <apartment id="2">
+        <floor>1</floor>
+        <room>102</room>
+        <balcony>false</balcony>
+    </apartment>
+</apartments>

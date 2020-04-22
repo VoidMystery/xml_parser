@@ -11,7 +11,7 @@
     <script src="../../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/viewport.js"></script>
+    <script src="../../js/vp.js"></script>
 </head>
 <body>
 <div id="main" class="main">
@@ -28,9 +28,11 @@
                             <br>
                             <div class="form-row">
                                 <label for="sax">SAX:&nbsp;</label>
-                                <input type="radio" class="form-control" id="sax" value = "sax" checked="checked" name="parser_type">
+                                <input type="radio" id="sax" value = "sax" checked="checked" name="parser_type">
                                 <label for="sax">StAX:&nbsp;</label>
-                                <input type="radio" class="form-control" id="stax" value = "stax" name="parser_type">
+                                <input type="radio" id="stax" value = "stax" name="parser_type">
+                                <label for="sax">DOM:&nbsp;</label>
+                                <input type="radio" id="dom" value = "dom" name="parser_type">
                             </div>
                         </div>
                         <button class="btn btn-light" type="submit">Отправить</button>

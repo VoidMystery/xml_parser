@@ -1,6 +1,7 @@
 package by.jwd.lemesheuski.xml_parser.dao.parser;
 
 import by.jwd.lemesheuski.xml_parser.dao.XMLParserType;
+import by.jwd.lemesheuski.xml_parser.dao.parser.dom.DOMUtil;
 import by.jwd.lemesheuski.xml_parser.dao.parser.satx.StAXUtil;
 import by.jwd.lemesheuski.xml_parser.dao.parser.sax.SAXUtil;
 
@@ -14,6 +15,7 @@ public class ParserProvider {
     private ParserProvider() {
         parsers.put(XMLParserType.SAX, new SAXUtil());
         parsers.put(XMLParserType.STAX, new StAXUtil());
+        parsers.put(XMLParserType.DOM, new DOMUtil());
     }
 
     public static ParserProvider getInstance() {
